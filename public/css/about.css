@@ -1,0 +1,244 @@
+/* =========================================
+   REVIEWERHUB ABOUT
+========================================= */
+
+.about-page {
+    min-height: 100vh;
+    background: #ffffff;
+    color: #002147;
+}
+
+.about-container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.about-hero {
+    padding: 75px 0;
+
+    background: #002147;
+
+    color: #ffffff;
+
+    border-bottom: 5px solid #f4b400;
+}
+
+.about-label {
+    margin: 0 0 15px;
+
+    color: #f4b400;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.about-hero h1 {
+    margin: 0 0 20px;
+
+    color: #ffffff;
+
+    font-size: 48px;
+    line-height: 1.15;
+}
+
+.about-hero p:last-child {
+    max-width: 700px;
+
+    margin: 0;
+
+    color: #ffffff;
+
+    opacity: 0.9;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.about-content {
+    padding: 75px 0 90px;
+
+    background: #ffffff;
+}
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns: 1.1fr 0.9fr;
+
+    gap: 60px;
+
+    align-items: start;
+}
+
+.section-label {
+    margin: 0 0 10px;
+
+    color: #002147;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 1.7px;
+}
+
+.about-main h2 {
+    max-width: 600px;
+
+    margin: 0 0 20px;
+
+    color: #002147;
+
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+.about-main p:not(.section-label) {
+    max-width: 620px;
+
+    color: #002147;
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.about-features {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.about-feature {
+    display: flex;
+
+    gap: 16px;
+
+    padding: 20px;
+
+    background: #ffffff;
+
+    border: 2px solid #002147;
+
+    border-radius: 9px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.about-feature:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 33, 71, 0.13);
+}
+
+.feature-number {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #f4b400;
+    color: #002147;
+
+    border-radius: 6px;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.about-feature h3 {
+    margin: 0 0 6px;
+
+    color: #002147;
+
+    font-size: 16px;
+}
+
+.about-feature p {
+    margin: 0;
+
+    color: #002147;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   BOTTOM ACCENT
+========================================= */
+
+.about-content::after {
+    content: "";
+
+    display: block;
+
+    width: 70px;
+    height: 5px;
+
+    margin: 60px auto 0;
+
+    background: #f4b400;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-hero h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .about-hero {
+        padding: 55px 0;
+    }
+
+    .about-content {
+        padding: 55px 0 70px;
+    }
+
+    .about-hero h1 {
+        font-size: 34px;
+    }
+
+    .about-main h2 {
+        font-size: 27px;
+    }
+}
