@@ -10,15 +10,10 @@ class DatabaseSeeder extends Seeder
 {
     use WithoutModelEvents;
 
-    public function run(): void
+    public function run()
     {
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
-
         $this->call([
-            LearningResourceSeeder::class,
+            ProductSeeder::class,
         ]);
     }
 }

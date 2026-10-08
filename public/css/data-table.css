@@ -1,0 +1,644 @@
+/* =========================================================
+   REVIEWERHUB - DATA TABLE
+   ========================================================= */
+
+.data-table-page {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    box-sizing: border-box;
+
+    background: #f5f6f8;
+
+    padding: 32px 42px 45px;
+
+    color: #172033;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.data-table-header {
+    width: 100%;
+    max-width: 1450px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    gap: 30px;
+}
+
+.data-table-label {
+    margin: 0 0 6px;
+
+    color: #b18a18;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.data-table-header h1 {
+    margin: 0;
+
+    color: #002147;
+
+    font-size: 34px;
+    line-height: 1.15;
+
+    font-weight: 800;
+}
+
+.data-table-description {
+    max-width: 650px;
+
+    margin: 8px 0 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   SUMMARY
+   ========================================================= */
+
+.table-summary {
+    min-width: 150px;
+
+    padding-left: 18px;
+
+    border-left: 3px solid #d4af37;
+}
+
+.table-summary span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #8b929d;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+}
+
+.table-summary strong {
+    color: #002147;
+
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   TABLE CARD
+   ========================================================= */
+
+.data-table-card {
+    width: 100%;
+    max-width: 1450px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e7eb;
+    border-radius: 9px;
+
+    box-shadow: 0 2px 8px rgba(0, 33, 71, 0.04);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CARD HEADER
+   ========================================================= */
+
+.data-table-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 22px 24px;
+
+    border-bottom: 1px solid #e7eaee;
+}
+
+.table-section-label {
+    margin: 0 0 4px;
+
+    color: #b18a18;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.data-table-card-header h2 {
+    margin: 0;
+
+    color: #002147;
+
+    font-size: 19px;
+    font-weight: 750;
+}
+
+.back-report-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 8px 13px;
+
+    background: #ffffff;
+
+    border: 1px solid #002147;
+    border-radius: 5px;
+
+    color: #002147;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    transition: all 0.2s ease;
+}
+
+.back-report-button:hover {
+    background: #002147;
+    color: #ffffff;
+}
+
+.back-report-button span {
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   TABLE WRAPPER
+   ========================================================= */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.products-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: auto;
+}
+
+
+/* =========================================================
+   TABLE HEAD
+   ========================================================= */
+
+.products-table thead {
+    background: #002147;
+}
+
+.products-table th {
+    padding: 13px 17px;
+
+    color: #ffffff;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+
+    text-align: left;
+
+    white-space: nowrap;
+}
+
+.products-table th:first-child {
+    padding-left: 24px;
+}
+
+.products-table th:last-child {
+    padding-right: 24px;
+}
+
+
+/* =========================================================
+   TABLE BODY
+   ========================================================= */
+
+.products-table tbody tr {
+    border-bottom: 1px solid #edf0f3;
+
+    transition: background 0.15s ease;
+}
+
+.products-table tbody tr:hover {
+    background: #fafbfc;
+}
+
+.products-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.products-table td {
+    padding: 15px 17px;
+
+    color: #4b5563;
+
+    font-size: 12px;
+
+    vertical-align: middle;
+
+    white-space: nowrap;
+}
+
+.products-table td:first-child {
+    padding-left: 24px;
+}
+
+.products-table td:last-child {
+    padding-right: 24px;
+}
+
+
+/* =========================================================
+   PRODUCT ID
+   ========================================================= */
+
+.product-id {
+    color: #8b929d;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   PRODUCT NAME
+   ========================================================= */
+
+.product-name {
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+}
+
+.product-avatar {
+    width: 34px;
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+
+    background: #eef3f8;
+
+    color: #002147;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.product-name strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #172033;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.product-name small {
+    display: block;
+
+    color: #9aa1aa;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   PRICE
+   ========================================================= */
+
+.price {
+    color: #002147;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   QUANTITY
+   ========================================================= */
+
+.quantity {
+    color: #172033;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   CATEGORY
+   ========================================================= */
+
+.category-badge {
+    display: inline-block;
+
+    padding: 5px 9px;
+
+    border-radius: 20px;
+
+    background: #f1f4f7;
+
+    color: #334155;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   TOTAL VALUE
+   ========================================================= */
+
+.total-value {
+    color: #002147;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   CREATED DATE
+   ========================================================= */
+
+.created-date {
+    color: #6b7280;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.status {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 6px;
+
+    padding: 5px 9px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.status-dot {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    display: inline-block;
+}
+
+
+/* In Stock */
+
+.status-in {
+    background: #eaf6ee;
+
+    color: #277343;
+}
+
+.status-in .status-dot {
+    background: #3a9b5f;
+}
+
+
+/* Low Stock */
+
+.status-low {
+    background: #fff6df;
+
+    color: #9a7212;
+}
+
+.status-low .status-dot {
+    background: #d4af37;
+}
+
+
+/* Out of Stock */
+
+.status-out {
+    background: #fbecec;
+
+    color: #a33a3a;
+}
+
+.status-out .status-dot {
+    background: #c64b4b;
+}
+
+
+/* =========================================================
+   EMPTY TABLE
+   ========================================================= */
+
+.empty-table {
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+.empty-icon {
+    width: 42px;
+    height: 42px;
+
+    margin: 0 auto 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eef3f8;
+
+    color: #002147;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.empty-table h3 {
+    margin: 0 0 5px;
+
+    color: #002147;
+
+    font-size: 15px;
+}
+
+.empty-table p {
+    margin: 0;
+
+    color: #8b929d;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.data-table-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 13px 24px;
+
+    background: #fafbfc;
+
+    border-top: 1px solid #e7eaee;
+}
+
+.data-table-footer p {
+    margin: 0;
+
+    color: #8b929d;
+
+    font-size: 10px;
+}
+
+.data-table-footer strong {
+    color: #002147;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   ========================================================= */
+
+@media (min-width: 1600px) {
+
+    .data-table-page {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .data-table-header h1 {
+        font-size: 38px;
+    }
+
+    .products-table th {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .products-table td {
+        padding-top: 17px;
+        padding-bottom: 17px;
+    }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .data-table-page {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .products-table {
+        min-width: 1000px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .data-table-page {
+        padding: 25px 18px 35px;
+    }
+
+    .data-table-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .data-table-header h1 {
+        font-size: 30px;
+    }
+
+    .data-table-card-header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .data-table-page {
+        padding: 20px 12px 30px;
+    }
+
+    .data-table-card-header {
+        flex-direction: column;
+    }
+
+    .data-table-header h1 {
+        font-size: 27px;
+    }
+
+}
